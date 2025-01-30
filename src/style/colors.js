@@ -1,0 +1,33 @@
+const color = {
+    primary: '#FEC801',
+    secundary:'#80169A',
+    tertiary:'#CD03FF',
+    quartial:'#5D0074',
+    canceled:'#D43B3BFF',
+    dk_canceled:'#B94646FF',
+    success:'#5DA9E9',
+    done:'#1BDD11',
+    main:'#FE7A01',
+    mainBg:'#CB6200FF',
+    light:'#ECECECFF',
+    gray:'#EDEDED',
+    gray2:'#252525',
+    white:'#ffffff',
+    white2:'#F6F6F6FF',
+    blgray:'#50505050',
+    dark_bg:'#18191A',
+    dk_card:'#252525',
+    black:'#000000',
+    dark:'#252525',
+    shadow:'#000000D0',
+    boxShadow:'0px 0.5px 4px #10101086',
+    textShadow:'0px 0px 1px #1010105D',
+    radius:'10px',
+    border:'1px solid #F8FAFD',
+    divider:'1px solid #5858583D',
+    placeholder:'#676767AF',
+    danger:'#C63F3F',
+    couponTax:'#FBDFADFF'
+}
+
+export default color
