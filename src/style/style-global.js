@@ -106,6 +106,8 @@ export const Box = styled.div`
 export const BoxLine = styled.div`
     max-height: ${props=> props.max_height};
     min-height: ${props=> props.min_height};
+    min-width: ${props=> props.min_width};
+    max-width: ${props=> props.min_width};
     overflow:${props => props.overflow} ;
     overflow-x: ${props=>props.over_x};
     overflow-y: ${props=>props.over_y};
@@ -145,8 +147,11 @@ export const BoxLine = styled.div`
     width: ${props => props.widthMobile};
     }
 `
-
 export const BoxItem = styled.div`
+    max-height: ${props=> props.max_height};
+    min-height: ${props=> props.min_height};
+    min-width: ${props=> props.min_width};
+    max-width: ${props=> props.min_width};
     display: ${props=> props.display ? props.display : 'flex' };
     grid-area: ${props=>props.area};
     overflow: ${props=> props.overflow};
@@ -250,7 +255,7 @@ export const Input = styled.input`
 export const Btn = styled.button`
     justify-content: ${props=> props.justify ? props.justify : 'center'};
     align-items: ${props => props.align ? props.align : 'center'};
-    display: ${props=> props.display };
+    display: ${props=> props.display ? props.display : 'flex' };
     border: none;
     flex: ${props=> props.flex};
     color:${props => props.color };
@@ -275,7 +280,11 @@ export const Btn = styled.button`
     text-overflow: ${props=> props.textOverflow} ;
     animation: ${props => props.animate};
     transition: ${props => props.transition ? props.transition : `all 600ms`};
-    
+    max-height: ${props=> props.max_height};
+    min-height: ${props=> props.min_height};
+    min-width: ${props=> props.min_width};
+    max-width: ${props=> props.min_width};
+    flex-direction: ${props => props.direction};
     &&:hover{
         transition: all 650ms ;
         cursor: ${props => props.cursor ? props.cursor : "pointer"};
@@ -284,8 +293,6 @@ export const Btn = styled.button`
         opacity: ${props=> props.hoverOpacity};
     }
 `
-
-
 
 export const TextBtn = styled.h6`
     display: ${props=> props.display };
@@ -298,6 +305,8 @@ export const TextBtn = styled.h6`
     text-align: ${props => props.align};
     font-weight: ${props=> props.weight ? props.weight : '400'};
     font-size: ${props=> props.size ? props.size : '12px'};
+    text-overflow: ${props => (props.text_overflow === true ) ? 'ellipsis' : 'none'};
+    overflow: ${props => (props.text_overflow === true ) ? 'hidden' : 'none'};
     transition: all 1s;
     margin: 0px;
     &&:hover{

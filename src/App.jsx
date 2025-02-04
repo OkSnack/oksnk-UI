@@ -1,8 +1,13 @@
 
-import {BoxLine,SubTitle,Title,BreakLine, BoxItem, Btn, TextBtn} from './style/style-global'
+import {BoxLine,SubTitle,Title, BoxItem, Btn, TextBtn} from './style/style-global'
+import { useNavigate } from "react-router-dom"
 import color from './style/colors'
 import './pages/Desc'
+import './index.css'
+
 function App() {
+  const navigate = useNavigate();
+
   return (
     <>
       <BoxLine bg_color={color.gray2} height='100vh' width='100vw' direction='column'>
@@ -11,12 +16,10 @@ function App() {
           <Title size='55px' color={color.success} weight='bold'> Ok Snack UI</Title>
          </BoxItem>
          <BoxItem height='50px' margin='10px 0px'>
-          <Btn width='20% - 16px' hoverBg={color.success} onClick={() => {}}> 
+          <Btn min_width='140px' max_widht='15%x' height='32px' hoverBg={color.success} onClick={() => navigate("/icons") }> 
             <TextBtn color={color.black} hoverColor={color.white} >  Ver mais </TextBtn>
           </Btn>
          </BoxItem>
-       
-        
       </BoxLine>
     </>
   )
