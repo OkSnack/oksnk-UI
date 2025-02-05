@@ -27,9 +27,7 @@ export const Container = styled.div.attrs({
   justify-content: ${props=> props.justify ? props.justify : 'center'};
   align-items: ${props => props.align ? props.align : 'center'};
 `
-export const BreakLine = styled.br`
 
-`
 
 export const Row = styled.div.attrs({
     className: 'row'
@@ -141,11 +139,11 @@ export const BoxLine = styled.div`
     transition: ${props => props.transition ? props.transition : `all 600ms`};
     border:${props => props.border};
 
-    
     @media screen and (max-width: 800px) {
     height: ${props => props.heightMobile};
     width: ${props => props.widthMobile};
     }
+
 `
 export const BoxItem = styled.div`
     max-height: ${props=> props.max_height};
@@ -186,6 +184,7 @@ export const BoxItem = styled.div`
     border-top:${props => props.borderTop};
     border-bottom:${props => props.borderBottom};
     transition: ${props => props.transition ? props.transition : `all 600ms`};
+
     #value::-webkit-inner-spin-button { 
         -webkit-appearance: none;
     }
@@ -250,7 +249,6 @@ export const Input = styled.input`
         color: ${color.placeholder};
     }
 
-
 `
 export const Btn = styled.button`
     justify-content: ${props=> props.justify ? props.justify : 'center'};
@@ -285,6 +283,10 @@ export const Btn = styled.button`
     min-width: ${props=> props.min_width};
     max-width: ${props=> props.min_width};
     flex-direction: ${props => props.direction};
+    overflow: ${props=> props.overflow};
+    overflow-x: ${props=>props.over_x};
+    overflow-y: ${props=>props.over_y};
+    
     &&:hover{
         transition: all 650ms ;
         cursor: ${props => props.cursor ? props.cursor : "pointer"};
@@ -305,10 +307,11 @@ export const TextBtn = styled.h6`
     text-align: ${props => props.align};
     font-weight: ${props=> props.weight ? props.weight : '400'};
     font-size: ${props=> props.size ? props.size : '12px'};
-    text-overflow: ${props => (props.text_overflow === true ) ? 'ellipsis' : 'none'};
-    overflow: ${props => (props.text_overflow === true ) ? 'hidden' : 'none'};
+    text-overflow: ${props => props.text_overflow  ? props.text_overflow  : 'ellipsis'};
+    overflow: ${props => props.overflow  ? props.overflow  : 'hidden'};
     transition: all 1s;
     margin: 0px;
+
     &&:hover{
         transition: all 550ms;
         opacity: ${props => props.hover};
