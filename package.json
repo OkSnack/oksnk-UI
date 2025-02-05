@@ -31,7 +31,7 @@
     "globals": "^15.14.0",
     "vite": "^6.0.5"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "Project in develop for Ok Snack Systems",
   "main": "eslint.config.js",
   "author": "",
   "license": "ISC"
