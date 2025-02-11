@@ -1,0 +1,17 @@
+export {
+    ContainerPage,
+    Container,
+    BoxLine,
+    BoxItem,
+    Btn,
+    TextBtn,
+    TextInput,
+    Input,
+    Title,
+    Text,
+    SubTitle,
+    LinkText,
+    TxtArea,
+    ContentCard,
+    Card,
+    } from './style/style-global'

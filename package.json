@@ -1,8 +1,18 @@
 {
   "name": "@ciure/oksnk-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
+  "description": "Project in develop for Ok Snack Systems",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -31,8 +41,6 @@
     "globals": "^15.14.0",
     "vite": "^6.0.5"
   },
-  "description": "Project in develop for Ok Snack Systems",
-  "main": "eslint.config.js",
   "author": "",
   "license": "ISC"
 }
