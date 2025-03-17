@@ -14,4 +14,5 @@ export {
     TxtArea,
     ContentCard,
     Card,
+    Img,
     } from './style/style-global'

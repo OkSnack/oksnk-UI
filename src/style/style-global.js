@@ -320,7 +320,7 @@ export const TextBtn = styled.h6`
     }
 `
 
-export const Img = styled.img`
+export const Img = styled.image`
     height:${props=>props.height} ;
     width:${props=>props.width} ;
     opacity: ${props=>props.opacity};

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: path.resolve(__dirname, "src/index.jsx"),
       name: "@ciure/oksnk-ui",
       fileName: (format) => `index.${format}.js`,
       formats: ["es", "cjs"]
