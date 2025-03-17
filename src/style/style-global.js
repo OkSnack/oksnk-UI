@@ -385,3 +385,7 @@ export const Img = styled.img`
         transition: all 1s;
     }
 `
+
+export const Icon = styled.i`
+
+`

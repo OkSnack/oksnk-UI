@@ -3,9 +3,9 @@ import toast from "react-hot-toast";
 import * as FaIcons from "react-icons/fa"; // Importa todos os ícones FontAwesome
 import * as MdIcons from "react-icons/md"; // Importa todos os ícones Material
 import * as AiIcons from "react-icons/ai"; // Importa todos os ícones Ant Design
-import { BoxItem, BoxLine, Btn, Icon, TextBtn, Title } from "./style/style-global";
+import { BoxItem, BoxLine, Btn, TextBtn, Icon} from "./style/style-global";
 import { Toaster } from "react-hot-toast";
-import color from "./style/colors";
+
 
 const IconList = () => {
   

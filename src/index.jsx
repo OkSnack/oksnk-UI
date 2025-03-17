@@ -15,4 +15,5 @@ export {
     ContentCard,
     Card,
     Img,
+    Icon,
     } from './style/style-global'
