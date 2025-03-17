@@ -375,7 +375,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Img = styled.image`
+export const Img = styled.img`
     height:${props=>props.height} ;
     width:${props=>props.width} ;
     opacity: ${props=>props.opacity};
