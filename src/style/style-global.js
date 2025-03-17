@@ -27,80 +27,6 @@ export const Container = styled.div.attrs({
   justify-content: ${props=> props.justify ? props.justify : 'center'};
   align-items: ${props => props.align ? props.align : 'center'};
 `
-
-
-export const Row = styled.div.attrs({
-    className: 'row'
-})`
-    overflow:${props => props.overflow} ;
-    overflow-x: ${props=>props.over_x};
-    overflow-y: ${props=>props.over_y};
-    border: ${props => props.border};
-    flex: ${props => props.flex};
-    display: ${props=> props.display ? props.display : 'flex' };
-    grid-template-rows:${props => props.row};
-    grid-template-columns:${props => props.col};
-    grid-template-areas:${props => props.area};
-    margin:${props => props.margin} ;
-    position: ${props => props.position};
-    flex-direction: ${props => props.direction};   
-    background-color: ${props=>props.bg_color};
-    justify-content: ${props=> props.justify ? props.justify : 'center'};
-    align-items: ${props => props.align ? props.align : 'center'};
-    border-radius: ${props => props.radius};
-    height: ${props => props.height ? props.height : '100%'};
-    width: ${props => props.width ? props.width : '100%'};
-    background-color: ${props => props.bg_color};
-    position: ${props=>props.position};
-    left: ${props => props.left};
-    right: ${props => props.right};
-    top: ${props => props.top};
-    bottom: ${props => props.botton};
-    flex-wrap: ${props=> props.wrap};
-    padding: ${props=> props.padding};
-  `
-
-export const Col = styled.div``
-
-
-export const ContainerBox = styled.div`
-  height: ${props => props.height ? props.height : '80vh'};
-  width: ${props => props.width ? props.width : '100%'};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: ${color.radius};
-  box-shadow: ${props => props.boxShadow ? props.boxShadow : color.boxShadow};
-  overflow: hidden;
-  background-color: ${color.white};
-  margin:${props => props.margin} ;
-  position: ${props => props.position};
-  flex-direction: ${props => props.direction}; 
-`
-
-export const ContentBox = styled.div`
-  height: ${props => props.height ? props.height : '95%'};
-  width: ${props => props.width ? props.width : '100%'};
-  display: ${props=> props.display ? props.display : 'flex' };
-  justify-content: ${props=> props.justify ? props.justify : 'center'};
-  align-items: ${props => props.align ? props.align : 'center'};
-  border-radius: ${color.radius};
-  box-shadow: ${props => props.boxShadow ? props.boxShadow : color.boxShadow};
-  overflow: hidden;
-  background-color: ${color.white};
-  flex-direction: ${props => props.direction};
-`
-
-export const Box = styled.div`
-    margin: 0px;
-    display: flex;
-    flex-direction: ${props=>props.direction ? props.direction : 'row' };
-    justify-content: ${props => props.justify ? props.justify :'center'};
-    align-items: ${props => props.align ? props.align :'center'};
-    height: ${props => props.height ? props.height : '100%'};
-    width: ${props => props.width ? props.width : '100%'};
-`
-
 export const BoxLine = styled.div`
     max-height: ${props=> props.max_height};
     min-height: ${props=> props.min_height};
@@ -200,20 +126,6 @@ export const BoxItem = styled.div`
         display: none;
     }
 `
-
-
-export const BoxTitle = styled.div`
-     display: flex;
-     margin: 0px;
-     overflow-y: hidden;
-     justify-content: center;
-     flex-direction: ${props=>props.direction ? props.direction : 'row' };
-     align-items: ${props => props.align ? props.align :'center'};
-     height: ${props => props.height ? props.height : '25%'};
-     width: ${props => props.width ? props.width : '100%'};
-     background-color: ${ props => props.bg_color ? props.bg_color : color.light};
-     position: ${props=>props.position};
- `
 
 export const TextInput = styled.h3`
      margin: ${props=>props.margin ? props.margin : '0px'};
@@ -323,18 +235,6 @@ export const TextBtn = styled.h6`
         scale: ${props => props.hoverScale };
     }
 `
-
-export const Img = styled.image`
-    height:${props=>props.height} ;
-    width:${props=>props.width} ;
-    opacity: ${props=>props.opacity};
-    transition: all 1s;
-    &:hover{
-        opacity:${props=>props.opacityHover};
-        transition: all 1s;
-    }
-`
-
 export const BtnPass = styled.button`
   height: 30px;
   width: 35px;
@@ -415,13 +315,6 @@ export const TxtArea = styled.textarea`
     }
 `
 
-export const Span = styled.span`
-    color: ${color.main};
-    font-size: ${props=> props.size ? props.size : '12px'};
-`
-
-export const Icon = styled.i``
-
 
 export const Text = styled.h6`
  display: ${props=> props.display };
@@ -442,14 +335,6 @@ export const Text = styled.h6`
         color:${props=>props.hoverColor};
         scale: ${props => props.hoverScale };
     }
-`
-export const Divider = styled.div`
-    display: ${props=> props.display };
-    width: ${props => props.width};
-    height: ${props => props.height};
-    margin:${props => props.margin};
-    padding: ${props => props.padding};
-    background-color: ${props => props.bg_color};
 `
 
 // Estilo do container que comporta os cards
@@ -489,3 +374,14 @@ export const Card = styled.div`
     flex: 1 1 100%; /* Em telas muito pequenas, os itens ocupam 100% */
   }
 `;
+
+export const Img = styled.image`
+    height:${props=>props.height} ;
+    width:${props=>props.width} ;
+    opacity: ${props=>props.opacity};
+    transition: all 1s;
+    &:hover{
+        opacity:${props=>props.opacityHover};
+        transition: all 1s;
+    }
+`
