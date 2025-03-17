@@ -1,7 +1,7 @@
 {
   "name": "@ciure/oksnk-ui",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "Project in development for Ok Snack Systems",
   "main": "dist/index.cjs.js",
