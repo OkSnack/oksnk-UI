@@ -5,7 +5,7 @@ import * as MdIcons from "react-icons/md"; // Importa todos os ícones Material
 import * as AiIcons from "react-icons/ai"; // Importa todos os ícones Ant Design
 import { BoxItem, BoxLine, Btn, TextBtn, Icon} from "./style/style-global";
 import { Toaster } from "react-hot-toast";
-
+import color from "./style/colors";
 
 const IconList = () => {
   
@@ -33,7 +33,7 @@ const IconList = () => {
   const iconsAntDesign = Object.entries(AiIcons);
 
   return (
-    <BoxLine direction='column' bg_color='#1111'>
+    <BoxLine direction='column' bg_color={color.dark}>
       <BoxItem direction='column' justify='start' >
         <BoxItem height='5%'>
             <Btn height='32px' bg_color={click === 'FontAwesome' ? '#d6d5d5' : 'white'} onClick={() => {setClicled(iconsFontAwesome), setClick('FontAwesome') }}  > <TextBtn color='black' size='16px'> Font Awesome </TextBtn> </Btn>
@@ -42,8 +42,8 @@ const IconList = () => {
         </BoxItem>
         <BoxItem over_y='auto'  wrap='wrap'  >
             {clicled.map(([name,Icon]) => (
-              <Btn key={name} margin='8px' height='100px' width='100px' direction='column' onClick={()=>handleCopy(name)} overflow='hidden' > 
-                <Icon size={32} color='black' />
+              <Btn key={name} margin='8px' height='80px' width='80px' direction='column' onClick={()=>handleCopy(name)} overflow='hidden' > 
+                <Icon size={36} color='black' />
               <TextBtn color='black' size='10px' >{name}</TextBtn>ß
             </Btn>
           )
