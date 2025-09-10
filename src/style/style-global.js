@@ -26,6 +26,7 @@ export const Container = styled.div.attrs({
   background-color: ${props=>props.bg_color};
   justify-content: ${props=> props.justify ? props.justify : 'center'};
   align-items: ${props => props.align ? props.align : 'center'};
+  padding:${props => props.padding};
 `
 export const BoxLine = styled.div`
     max-height: ${props=> props.max_height};
@@ -68,6 +69,7 @@ export const BoxLine = styled.div`
     transform: ${props=> props.transform};
     transition: ${props => props.transition ? props.transition : `all 600ms`};
     border:${props => props.border};
+    padding:${props => props.padding};
 
     @media screen and (max-width: 800px) {
     height: ${props => props.heightMobile};
@@ -114,6 +116,7 @@ export const BoxItem = styled.div`
     border-top:${props => props.borderTop};
     border-bottom:${props => props.borderBottom};
     transition: ${props => props.transition ? props.transition : `all 600ms`};
+    padding:${props => props.padding};
 
     #value::-webkit-inner-spin-button { 
         -webkit-appearance: none;
@@ -134,6 +137,7 @@ export const TextInput = styled.h3`
      color:${props=> props.color ? props.color : color.black };
      font-weight: ${props=> props.weight ? props.weight : '400'} ;
      text-shadow: ${props=>props.shadow};
+     padding:${props => props.padding};
 `
 
 export const Input = styled.input`
@@ -158,6 +162,7 @@ export const Input = styled.input`
     text-align: ${props => props.txt_align};
     border:  ${props => props.border};
     appearance: none;
+    padding:${props => props.padding};
     
     &::placeholder{
         font-size: ${props=>props.size ? props.size : '16px'};
@@ -253,10 +258,12 @@ export const Title = styled.h1`
      color:${props=> props.color ? props.color : color.black };
      font-weight:${props=> props.weight ? props.weight : '600'} ;
      text-shadow: ${props=>props.shadow ? props.shadow : 'none'};
+     padding:${props => props.padding};
      &&:hover{
         transition: all 600ms;
         color:${props => props.hover }
      }
+     
 `
 export const SubTitle = styled.h3`
     text-align: ${props=> props.align || props.text_align};
@@ -266,6 +273,7 @@ export const SubTitle = styled.h3`
     font-weight: ${props=> props.weight ? props.weight : '400'} ;
     display: flex;
     justify-content: ${props=> props.justify ? props.justify : 'center'};
+    padding:${props => props.padding};
     &&:hover{
         transition: all 1s;
         color: ${props => props.hoverColor};
@@ -317,7 +325,7 @@ export const TxtArea = styled.textarea`
 
 
 export const Text = styled.h6`
- display: ${props=> props.display };
+    display: ${props=> props.display };
     width: ${props => props.width};
     height: ${props => props.height};
     margin:${props => props.margin};
